@@ -243,7 +243,7 @@ else ()
 endif ()
 
 if (NNG_ENABLE_TLS)
-    nng_defines(NNG_SUPP_TLS)
+    add_definitions(-DNNG_SUPP_TLS)
 endif ()
 
 if (NNG_TESTS)
